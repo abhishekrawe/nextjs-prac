@@ -3,3 +3,45 @@
    align-items: center; 
    gap: 10px;
 }
+
+.logout {
+   padding: 10px;
+   cursor: pointer;
+   font-weight: bold;
+
+}
+
+.menuButton,
+.mobileLink {
+   display: none;
+}
+
+
+
+@media (max-width: 768px) {
+   .links {
+      display: none;
+   }
+
+      .menuButton{
+         display: block;
+         cursor: pointer;
+         font-size: 30px;
+         font-weight: bold;
+      }
+
+      .mobileLink {
+         position: absolute;
+         top: 100px;
+         background-color: red;
+         right: 0;
+         width: 50%;
+         height: cacl(100vh - 100px);
+         background-color: var(--bg);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+      }
+}
