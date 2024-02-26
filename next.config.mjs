@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "https://media.sproutsocial.com",
+        hostname: "images.pexels.com",
       },
     ],
   },
