@@ -24,11 +24,8 @@ const Links = () => {
             path: "/blog"
         },
     ];
-
-
     const session = true;
     const isAdmin = false;
-
     // Return JSX
     return (
         <div className={styles.container}>
@@ -48,8 +45,6 @@ const Links = () => {
             <button className={styles.menuButton} onClick={() => setOpen(prev => !prev)}> Menu </button>
             {
                 open && <div className={styles.mobileLink}>
-
-
                     {links.map((link) => (
                         <NavLink item={link} key={link.title} />
 
